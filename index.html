@@ -1,0 +1,57 @@
+---
+title: Home
+---
+
+<html>
+  {% include header.html %}
+
+  <script type="text/javascript">
+    if (window.location.search.indexOf('invited=yes') > -1) {
+      swal.fire({
+          title: "Successfully added to your server!",
+          text: "Thanks a lot!",
+          type: "success"
+      });
+      var dom = document.createElement("script");
+      dom.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+      dom.setAttribute("data-ad-client", "ca-pub-2168638075916485");
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(dom, firstScriptTag);
+    }
+  </script>
+  <body>
+
+    <canvas id="canvas"></canvas>
+    <script type="text/javascript">
+      backgroundEffect('canvas');
+    </script>
+    <div class="mainblock">
+      <div class="top">
+        <a href="https://discordapp.com/oauth2/authorize?client_id=220644154177355777&amp;scope=bot&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Fwatora.xyz%2Fen%2FThank-you" target="_blank">
+        <img class="bigavatar" src="./images/avatar.png"></a>
+      </div>
+      <div class="toptext">
+        <h3><span>More than a Simple Musicbot - </span><span class="blue">Website Under Construction</span></h3>
+        <h1><span>Hazuki Watora</span></h1>
+      </div>
+      <div class="topbuttons">
+        <div>
+          <a class="wb_button" href="https://discordapp.com/oauth2/authorize?client_id=220644154177355777&amp;scope=bot&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Fwatora.xyz%2Fen%2FThank-you">
+            <span>Invitation</span>
+          </a>
+        </div>
+        <div>
+          <a class="wb_button" href="https://discordapp.com/invite/ArJgTpM" target="_blank">
+            <span>My server</span>
+          </a>
+        </div>
+      </div>
+      <figure class="stats">
+        <a href="https://discordbots.org/bot/220644154177355777">
+          <img src="https://discordbots.org/api/widget/220644154177355777.svg" onerror="arguments[0].currentTarget.style.display='none'">
+        </a>
+      </figure>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>
