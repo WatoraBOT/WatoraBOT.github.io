@@ -60,6 +60,7 @@ a:hover, a:focus {
     margin: auto;
     animation: float 6s ease-in-out infinite;
     overflow: hidden;
+	cursor: pointer;
 }
 
 .toptext h1 {

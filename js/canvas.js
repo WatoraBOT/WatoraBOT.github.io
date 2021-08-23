@@ -19,7 +19,7 @@ function backgroundEffect(id) {
         ctx.beginPath();
         ctx.arc(this.x + +Math.sin((50 + x + (t / 10)) / 100) * 3, this.y + +Math.sin((45 + x + (t / 10)) / 100) * 4, this.r, 0, 2 * Math.PI, false);
         ctx.lineWidth = this.w;
-        ctx.strokeStyle = '#195FF5';
+        ctx.strokeStyle = '#fff';
         ctx.stroke();
       }
     }
@@ -57,8 +57,8 @@ function backgroundEffect(id) {
         ctx.translate(this.x + Math.sin((x + (t / 10)) / 100) * 5, this.y + Math.sin((10 + x + (t / 10)) / 100) * 2);
         ctx.rotate(this.r * Math.PI / 180);
 
-        line(-1, -1, 1, 1, '#195FF5');
-        line(1, -1, -1, 1, '#195FF5');
+        line(-1, -1, 1, 1, '#fff');
+        line(1, -1, -1, 1, '#fff');
 
         ctx.restore();
       }
