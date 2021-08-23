@@ -1,5 +1,5 @@
 <a href="https://www.patreon.com/watora"><img alt="Become a Watora's Patron" src="https://c5.patreon.com/external/logo/become_a_patron_button.png" height="35px"></a><br>
-# Watora.xyz
+# Watorabot.github.io
 Here's the official repository of Watora's website, the discord music bot.
 
 ## License
