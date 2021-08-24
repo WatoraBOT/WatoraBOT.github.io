@@ -261,6 +261,10 @@ footer span {
   animation: octocat-wave 560ms ease-in-out
 }
 
+.github-corner {
+	cursor: pointer;
+}
+
 @keyframes octocat-wave {
 
   0%,
