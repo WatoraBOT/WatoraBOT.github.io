@@ -35,6 +35,11 @@ a:hover, a:focus {
 	color: inherit;
 }
 
+a {
+	color: white;
+	font-weight: bold !important;
+}
+
 @keyframes float {
 	0% {
 		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
@@ -51,14 +56,14 @@ a:hover, a:focus {
 }
 
 .bigavatar {
-		width: 300px;
+	width: 200px;
     border-radius: 50%;
-    border: 5px #FF015B solid;
+    border: 2px #FF015B solid;
     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
     transform: translatey(0px);
     display: block;
     margin: auto;
-    animation: float 6s ease-in-out infinite;
+	margin-right: 1.5em;
     overflow: hidden;
 	cursor: pointer;
 }
@@ -229,6 +234,10 @@ footer span {
 
 .patreon a i:hover {
 	background-color: rgb(249, 104, 84);
+}
+
+.paypal a i:hover {
+	background-color: #195FF5;
 }
 
 .docs a i:hover {
