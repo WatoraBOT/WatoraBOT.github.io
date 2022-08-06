@@ -1,7 +1,3 @@
----
-
----
-
 <script>
   var allposts = [];
   function redirectToCorrectPage() {
@@ -47,7 +43,7 @@
             <hr>
             <div class='_1'>THE PAGE</div>
             <div class='_2'>WAS NOT FOUND</div>
-            <a class='btn' href='{{ "/" | absolute_url }}'>BACK TO WATORA</a>
+            <a class='btn' href='/'>BACK TO WATORA</a>
         </div>
 
 <style>
@@ -57,11 +53,12 @@
         background: #232830;
         color:#fff;
         font-family: 'Open Sans', sans-serif;
-        max-height:700px;
+        min-height: 100% !important;
         overflow: hidden;
         position: fixed;
         width: 100%;
         height: 100%;
+        top: -50px;
     }
 
     .c {
